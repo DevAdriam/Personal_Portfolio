@@ -4,6 +4,8 @@ import Social from "./layout/social";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
+import Clients from "./pages/Clients";
+import Contact from "./pages/Contact";
 
 const App = () => {
   useEffect(() => {
@@ -14,10 +16,12 @@ const App = () => {
     <div className="max-w-[100vw] bg-black">
       <Nav />
       <Social />
-      <div className="h-[100vh] max-w-[100vw] overflow-x-hidden">
+      <div className="h-[max-content] py-20 max-w-[100vw] overflow-x-hidden">
         <Home />
         <About />
         <Services />
+        <Clients />
+        <Contact />
       </div>
     </div>
   );

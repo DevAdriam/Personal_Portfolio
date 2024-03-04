@@ -11,19 +11,19 @@ export const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/home",
+    path: "home",
     element: <Home />,
   },
   {
-    path: "/about",
+    path: "about",
     element: <About />,
   },
   {
-    path: "/contact",
+    path: "contact",
     element: <Contact />,
   },
   {
-    path: "/blogs",
+    path: "blogs",
     element: <Blogs />,
   },
 ]);

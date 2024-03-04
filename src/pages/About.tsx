@@ -21,7 +21,10 @@ const About = () => {
   }, [controls, inView]);
 
   return (
-    <div className=" h-[max-content] px-[220px] bg-black container py-10">
+    <div
+      className=" h-[max-content] px-10 md:px-[220px] bg-black container py-10"
+      id="about"
+    >
       <motion.h1
         ref={ref}
         initial="hidden"

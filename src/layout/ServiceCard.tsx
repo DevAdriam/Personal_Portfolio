@@ -14,8 +14,8 @@ const ServiceCard = ({
   delayTime: number;
 }) => {
   const cardVariants = {
-    hidden: { opacity: 0, x: -200 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 },
   };
 
   const controls = useAnimation();
@@ -40,7 +40,7 @@ const ServiceCard = ({
       animate={controls}
       variants={cardVariants}
     >
-      <div className="w-[400px] h-[300px] rounded-md border-2 border-white/55 shadow-xl flex items-center justify-center gap-2 flex-col shadow-slate-700 hover:scale-105  transition-transform duration-500">
+      <div className="md:w-[400px] h-[300px] w-[300] rounded-xl  glassmorphism shadow-md flex items-center justify-center gap-2 flex-col shadow-slate-700 hover:scale-105  transition-transform duration-500">
         <span className="text-white/90 text-3xl">{icon}</span>
         <h1 className="text-xl text-white/70">{title}</h1>
         <p className="text-md text-white/55 px-5">{content.slice(0, 150)}...</p>

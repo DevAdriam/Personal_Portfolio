@@ -76,7 +76,7 @@ const MultiCarousel = () => {
   ];
 
   const cardVariants = {
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: -10 },
     visible: { opacity: 1, x: 0 },
   };
 
@@ -93,7 +93,7 @@ const MultiCarousel = () => {
 
   return (
     <div className="mt-[80px] px-10">
-      <ul className={`flex items-center justify-center gap-10`}>
+      <ul className={`flex items-center flex-wrap justify-center gap-10`}>
         {carouselItem.map((item) => {
           return (
             <motion.div

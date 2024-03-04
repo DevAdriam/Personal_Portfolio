@@ -1,34 +1,35 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Nav = () => {
   const navMenu = [
     {
       title: "Home",
-      path: "/",
+      path: "/#",
     },
     {
       title: "About",
-      path: "/about",
+      path: "#about",
+    },
+
+    {
+      title: "Projects",
+      path: "#clients",
     },
     {
       title: "Contact",
-      path: "/contact",
-    },
-    {
-      title: "Blogs",
-      path: "/profile",
+      path: "#contact",
     },
   ];
   return (
-    <div className="w-full py-8 text-white flex items-center justify-between container px-20 fixed top-0">
+    <div className="w-full py-8 text-white flex items-center justify-between container px-20 fixed top-0 z-10 ">
       <div>
         <h1 className="text-white/55">DevAdriam</h1>
       </div>
 
-      <ul className="flex items-center justify-center gap-4">
+      <ul className="md:flex items-center justify-center gap-4 hidden">
         {navMenu.map((item, index) => {
           return (
-            <Link to={item.path} key={index}>
+            <Link to={item.path} className="hover:cursor-pointer" smooth>
               <li className="text-white/55 hover:text-white/90">
                 {item.title}
 

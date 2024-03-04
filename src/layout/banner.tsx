@@ -26,7 +26,10 @@ const Banner = () => {
   }, [controls, inView]);
   return (
     <div>
-      <div className="w-full h-[100vh] flex items-center justify-center flex-col ">
+      <div
+        className="w-full h-[max-content] py-20 flex items-center justify-center flex-col "
+        id="home"
+      >
         <Avatar className=" shadow-md shadow-gray-700 mb-6">
           <AvatarImage
             src={profile}
@@ -51,7 +54,7 @@ const Banner = () => {
           transition={{ delay: 0.2, duration: 1 }}
           animate={controls}
           variants={cardVariants}
-          className="w-[600px] text-center mb-10"
+          className="w-[80vw] md:w-[600px] text-center mb-10"
         >
           <TitleText
             title={`Designing and Implementing Server-Side Solutions
@@ -69,7 +72,7 @@ const Banner = () => {
           <Button
             title="Download CV"
             variant={"outline"}
-            className="bg-transparent shadow-md shadow-slate-700  border-white/55 w-[200px] py-7 text-white/55 text-xl cursor-pointer hover:border-white/90 hover:text-white/90 duration-500 transform"
+            className="bg-transparent shadow-lg shadow-slate-700  border-white/55 w-[200px] py-7 text-white/60 text-xl cursor-pointer hover:border-white/90 hover:text-white/90 duration-500 transform"
           >
             Download CV
           </Button>

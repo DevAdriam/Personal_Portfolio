@@ -12,28 +12,28 @@ const Services = () => {
     {
       title: "Membership Management System",
       icon: <FaUsers />,
-      delayTime: 1,
+      delayTime: 0.4,
       content:
         "Streamline and organize your organization's memberships effortlessly with our Membership Management System. From onboarding new members to renewals and communication, our system ensures a seamless experience. Gain insights into member engagement, automate renewals, and foster a thriving community with our user-friendly and feature-rich platform.",
     },
     {
       title: "POS System",
       icon: <TiShoppingCart />,
-      delayTime: 1.2,
+      delayTime: 0.6,
       content:
         "Drive sales and enhance customer service with our Point of Sale (POS) System. Simplify transactions, manage inventory in real-time, and gain valuable insights into customer behavior. Upgrade your retail or hospitality business with a reliable and user-friendly POS solution.",
     },
     {
       title: "ERP Solution",
       icon: <FaCalculator />,
-      delayTime: 1.4,
+      delayTime: 0.8,
       content:
         "Elevate your business with our comprehensive ERP solution. Unify and streamline your processes across departments, from finance and human resources to supply chain and customer relationship management. Experience improved productivity, data accuracy, and decision-making capabilities.",
     },
     {
       title: "Responsive Design",
       icon: <Code2Icon />,
-      delayTime: 1.6,
+      delayTime: 1,
       content:
         "Revolutionize your restaurant operations with our Kitchen Management System. Optimize order processing, inventory control, and kitchen workflows. Increase the speed and accuracy of your culinary team, ensuring a delightful dining experience for your customers.",
     },
@@ -56,7 +56,7 @@ const Services = () => {
   }, [controls, inView]);
 
   return (
-    <div className=" h-[100vh] px-[220px] bg-black container  py-10">
+    <div className="md:px-[220px] h-[max-content] bg-black container py-10">
       <motion.div
         ref={ref}
         initial="hidden"

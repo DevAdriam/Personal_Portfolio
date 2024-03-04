@@ -14,7 +14,7 @@ const Social = () => {
     },
   ];
   return (
-    <ul className="grid place-items-center fixed left-[100px] top-[300px]">
+    <ul className="md:grid place-items-center flex gap-5 fixed top-[20px] left-[65vw] md:left-[100px] md:top-[300px]">
       {socialLinks.map((item) => {
         return (
           <Link to={item.path}>
