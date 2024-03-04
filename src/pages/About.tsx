@@ -47,10 +47,10 @@ const About = () => {
           I am <span className="font-bold">Naing Aung Zaw</span> ,
           {new Date().getFullYear() - 2004}-year-old MERN Stack Developer,
           currently serving as a Backend Developer at
-          <span className="font-bold mx-1">Xsphere</span>. My expertise lies in
-          problem-solving and creative thinking, and I am enthusiastic about
-          learning new technologies. I bring a dedicated and proactive approach
-          to project development and maintenance.
+          <span className="font-bold mx-1">Xsphere</span>.<br />
+          <br /> My expertise lies in problem-solving and creative thinking, and
+          I am enthusiastic about learning new technologies. I bring a dedicated
+          and proactive approach to project development and maintenance.
         </motion.p>
       </div>
     </div>
