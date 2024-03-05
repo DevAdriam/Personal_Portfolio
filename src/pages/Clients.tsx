@@ -57,7 +57,7 @@ const Clients = () => {
         animate={controls}
         variants={cardVariants}
       >
-        <TitleText title="Previous & Current Clients"></TitleText>
+        <TitleText title="Previous & Current Work Projects"></TitleText>
       </motion.h1>
 
       <div className="w-full flex items-center justify-center flex-wrap gap-20 py-20 shadow-sm ">
