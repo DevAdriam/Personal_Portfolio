@@ -6,6 +6,9 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Clients from "./pages/Clients";
 import Contact from "./pages/Contact";
+import ReactGa from "react-ga4";
+
+ReactGa.initialize("G-3XQDBV3053");
 
 const App = () => {
   useEffect(() => {
