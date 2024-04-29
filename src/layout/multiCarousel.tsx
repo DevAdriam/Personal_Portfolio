@@ -36,7 +36,7 @@ const MultiCarousel = () => {
     },
     {
       language: <SiMysql />,
-      color: "text-white/55 hover:text-blue-700",
+      color: "text-white/55 hover:text-blue-400",
       delay: 1.6,
     },
     {
