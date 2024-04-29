@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { FaJava } from "react-icons/fa6";
 import {
+  SiDocker,
   SiExpress,
   SiJavascript,
   SiMysql,
@@ -72,6 +73,11 @@ const MultiCarousel = () => {
       language: <SiSpringboot />,
       color: "text-white/55 hover:text-green-400",
       delay: 3,
+    },
+    {
+      language: <SiDocker />,
+      color: "text-white/55 hover:text-blue-400",
+      delay: 3.2,
     },
   ];
 
